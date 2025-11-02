@@ -62,19 +62,19 @@ function App() {
                           </Link>
                         ))}
                       </div>
-                      <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                        {post.summary}
-                      </div>
                     </div>
-                    <div className="text-base leading-6 font-medium">
-                      <Link
-                        to={`/`}
-                        className="text-primary hover:text-primary-600 dark:hover:text-primary-400"
-                        aria-label={`Read more: "${post.title}"`}
-                      >
-                        Read more &rarr;
-                      </Link>
+                    <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                      {post.summary}
                     </div>
+                  </div>
+                  <div className="text-base leading-6 font-medium">
+                    <Link
+                      to={`/`}
+                      className="text-primary hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center"
+                      aria-label={`Read more: "${post.title}"`}
+                    >
+                      Read more &rarr;
+                    </Link>
                   </div>
                 </div>
               </div>
